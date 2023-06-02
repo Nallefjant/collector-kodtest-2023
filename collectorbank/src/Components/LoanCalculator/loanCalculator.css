@@ -40,18 +40,18 @@
    display: flex;
    justify-content: space-between;
    position: relative;
-   top: 47px;
-   padding-left: 0.25em;
+   top: 46px;
    padding-right: 0.25em;
    pointer-events: none;
 }
 
 .loan-calculator__debt-amount {
-   min-width: 13%;
+   min-width: 9%;
    color: #fff;
-   font-size: 14px;
+   font-size: 12px;
    display: flex;
    justify-content: flex-end;
+   padding-right: 8px;
 }
 
 .loan-calculator__max-debt-amount {
@@ -60,6 +60,28 @@
    display: flex;
    justify-content: flex-end;
    padding-left: 5em;
+   min-width: 40px;
+   font-size: 12px;
+}
+
+.loan-calculator__duration-amount {
+   min-width: 9%;
+   color: #fff;
+   font-size: 12px;
+   display: flex;
+   justify-content: flex-end;
+   margin-left: -14px;
+   padding-right: 8px;
+}
+
+.loan-calculator__max-duration-amount {
+   color: grey;
+   font-size: 14px;
+   display: flex;
+   justify-content: flex-end;
+   padding-left: 5em;
+   min-width: 40px;
+   font-size: 12px;
 }
 
    .loan-calculator__slider::-moz-range-thumb {

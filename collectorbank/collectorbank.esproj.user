@@ -7,7 +7,7 @@
   "type": "chrome",
   "request": "launch",
   "url": "http://localhost:3000",
-  "webRoot": "C:\\Users\\Liberty\\source\\repos\\CollectorBank\\CollectorBank"
+  "webRoot": "C:\\Users\\Liberty\\source\\repos\\collector-kodtest-2023\\CollectorBank"
 }</LaunchJsonTarget>
   </PropertyGroup>
 </Project>

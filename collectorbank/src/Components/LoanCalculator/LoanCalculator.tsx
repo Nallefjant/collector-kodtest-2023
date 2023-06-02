@@ -43,27 +43,19 @@ const LoanCalculator = () => {
    };
 
    const widthMaxAmountContainer = (amount: number, max: number, step: number) => {
-      const width = 100 - (100 * ((amount - step) / max));
-
-      if (width < 25) {
-         return 0;
-      }
-      
+      const width = 100 - widthAmountContainer(amount, max, step);
+            
       return width;
    }
 
    const widthAmountContainer = (amount: number, max: number, step: number) => {
       const width = 100 * ((amount - step) / max);
 
-      if (width > 75) {
-         return 90;
-      }
-
       return width;
    }
 
    const sliderWidth = (amount: number, max: number, step: number) => {
-      return 100 * ((amount - step) / max);
+      return 100 * ((amount - step * 1.5) / (max - step));
    }
 
    const toApplicationButtonClick = () => {
@@ -97,7 +89,11 @@ const LoanCalculator = () => {
                   <div
                      className="loan-calculator__max-debt-amount"
                      style={{ "width": `${widthMaxAmountContainer(debtAmount, maxDebtAmount, debtStep)}%` }}>
-                     {maxDebtAmount} kr
+                     {debtStep + debtAmount < maxDebtAmount &&
+                        <span>
+                           {maxDebtAmount} kr
+                        </span>
+                     }
                   </div>
                }
             </div>
@@ -122,15 +118,17 @@ const LoanCalculator = () => {
          <div className="loan-calculator__slider-container">
             <div className="loan-calculator__slider--hidden-text">
                <div
-                  className="loan-calculator__debt-amount"
+                  className="loan-calculator__duration-amount"
                   style={{ "width": `${widthAmountContainer(loanDuration, maxDuration, durationStep)}%` }}>
                   {loanDuration} år
                </div>
                {widthMaxAmountContainer(loanDuration, maxDuration, durationStep) > 0 &&
                   <div
-                     className="loan-calculator__max-debt-amount"
+                     className="loan-calculator__max-duration-amount"
                      style={{ "width": `${widthMaxAmountContainer(loanDuration, maxDuration, durationStep)}%` }}>
-                     {maxDuration} år
+                     {loanDuration < maxDuration &&
+                        <span>{maxDuration} år</span>
+                     }
                   </div>
                }
             </div>

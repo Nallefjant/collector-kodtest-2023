@@ -1,2 +1,4 @@
 C:\Users\Liberty\source\repos\CollectorBank\CollectorBank\obj\Debug\collectorbank.esproj.SuggestedBindingRedirects.cache
 C:\Users\Liberty\source\repos\CollectorBank\CollectorBank\obj\Debug\collectorbank.esproj.CoreCompileInputs.cache
+C:\Users\Liberty\source\repos\collector-kodtest-2023\CollectorBank\obj\Debug\collectorbank.esproj.SuggestedBindingRedirects.cache
+C:\Users\Liberty\source\repos\collector-kodtest-2023\CollectorBank\obj\Debug\collectorbank.esproj.CoreCompileInputs.cache
