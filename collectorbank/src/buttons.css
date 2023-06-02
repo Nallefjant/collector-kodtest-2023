@@ -1,0 +1,9 @@
+.primary {
+   background: #3BC785;
+   color: #fff;
+   padding: 0.75em 1em 0.75em 1em;
+   border-style: none;
+   border-radius: 4px;
+   font-weight: bold;
+   cursor: pointer;
+}

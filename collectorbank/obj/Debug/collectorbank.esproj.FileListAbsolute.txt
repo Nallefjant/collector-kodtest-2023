@@ -1,0 +1,2 @@
+C:\Users\Liberty\source\repos\CollectorBank\CollectorBank\obj\Debug\collectorbank.esproj.SuggestedBindingRedirects.cache
+C:\Users\Liberty\source\repos\CollectorBank\CollectorBank\obj\Debug\collectorbank.esproj.CoreCompileInputs.cache
